@@ -1,0 +1,198 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* HR Bar */ 
+#hrbar {
+    margin-left: 25%;
+    border: dotted 2px;
+    border-radius: 50%;
+    border-color: rgb(102, 57, 1);
+    width: 50%;
+}
+  
+ /* Main Page */ 
+#imageSide {
+    height: 90vh;
+    background-image:url(Images/homepage.jpeg);
+    background-size: cover;
+}
+.heading {
+    position: relative;
+    justify-content: end;
+}
+#title {
+    width: 20%;
+}
+
+h1 {
+    color:white;
+    font-size: large;
+    font-family: cursive;
+}
+h3 {
+    color:white;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Writing side edits */
+
+#writingSide {
+    height: 90vh;
+    background-image:url(Images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.informationBox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body{
+    background-image: url(Images/Background.jpg);
+}
+/* Moving down the pages */
+.specialGuests {
+    width: 20%;
+    height: 20%;
+}
+
+
+
+/* Grid editing */
+.container { 
+        height: 90vh;
+        width: 90vw;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-areas: "bM bM BmI BrI bR bR"
+                             "bM bM BmI BrI bR bR"
+                             ;
+     }
+.cell-1 {
+        grid-area: bM;
+     }
+.cell-2 {
+
+    grid-area: BmI;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    }
+.cell-3 {
+
+        grid-area: BrI;
+     }
+.cell-4 {
+      
+        grid-area: bR;
+        display: flex;
+        align-items: end;
+     }
+.cell {
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1rem;
+     }
+
+/* inside grid editing */
+
+
+.bestManHead {
+color: #b18360;
+}
+
+.specialPeoplePic    {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.spotify1 {
+    height: 2rem;
+    width: 2rem;
+ 
+}
+
+#descriptionBM {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: cursive;
+  margin: 0;
+  color: #D7C0AE;
+}
+.informationBM {
+    display: inline-table;
+    width: 6rem;
+    height: 10rem;
+}
+.btnStyle{
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnStyle:after {
+  content: "";
+  background-color: #D7C0AE;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.btnStyle:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .btnStyle {
+    padding: 13px 50px 13px;
+  }
+}
+
+@media (max-width: 600px) {
+    .container { grid-template-areas:  "bM" 
+                                       "BmI" 
+                                       "BrI"
+                                       "bR"
+        ; 
+    }
+    .cell-1 { justify-content: center;}
+    .cell-2 { justify-content: center;}
+    .cell-3 { justify-content: center;}
+    .cell-4 { justify-content: center;}
+  }
+
+@media (max-width: 1100px) {
+    .container { grid-template-areas:  "bM" 
+        "BmI" 
+        "BrI"
+        "bR"; }
+        .cell-1 { justify-content: center;}
+        .cell-2 { justify-content: center;}
+        .cell-3 { justify-content: center;}
+        .cell-4 { justify-content: center;}
+  }
+
+/* Blog Page */
