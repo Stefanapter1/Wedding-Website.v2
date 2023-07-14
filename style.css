@@ -109,7 +109,7 @@ body{
 
 /* inside grid editing bridesmaid and bestman*/
 
-.bestManHead {
+#bestManHead, #bestManHead2 {
 color: #b18360;
 }
 

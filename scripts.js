@@ -14,18 +14,29 @@ document.querySelector('.spotify1').addEventListener('click', function () {
   song.play();
 });
 
-var randomWords = ['Ieumundo', 'Ewan', 'Flid', 'Ieuan'];
-var wordDiv = document.getElementsByClassName('bestManHead');
+// Ranom Nickname Generators //
 
-function randomWord() {
-  wordDiv.innerHTML =
-    randomWords[Math.floor(Math.random() * randomWords.length)];
+function switchText (){
+  var randomWords = ['Ieumundo', 'Ewan', 'Flid', 'Ieuan'];
+  var randomIndex = Math.floor(Math.random() * 4);
+  document.getElementById("bestManHead").innerHTML = randomWords[randomIndex];
 }
 
-var randomWords2 = ['Eefee', 'Aiofe', 'Sister', 'Aiofe'];
-var wordDiv2 = document.getElementById('bridesMaidHead');
+const btn1 = document.getElementById('btn1');
+if (btn1) {
+btn1.addEventListener("click", switchText);
+};
 
-function randomWord2() {
-  wordDiv2.innerHTML =
-    randomWords2[Math.floor(Math.random() * randomWords2.length)];
+function switchText2 (){
+  var randomWords = ['eefa', 'iofe', 'sister', 'aiofe'];
+  var randomIndex = Math.floor(Math.random() * 4);
+  document.getElementById("bestManHead2").innerHTML = randomWords[randomIndex];
 }
+
+const btn2 = document.getElementById('btn2');
+if (btn2) {
+btn2.addEventListener("click", switchText2);
+};
+
+
+
